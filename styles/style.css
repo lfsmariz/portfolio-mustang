@@ -1,0 +1,13 @@
+:root{ 
+  /* CSS HEX */
+--textBody: #22223bff;
+--independence: #4a4e69ff;
+--heliotrope-gray: #9a8c98ff;
+--silver-pink: #c9ada7ff;
+--backgroundBody: #f2e9e4ff;
+}
+
+body {
+  background-color: var(--backgroundBody);
+  color: var(--textBody);
+}
