@@ -24,12 +24,12 @@ p {
   font-family: 'Courier New', Courier, monospace;
 }
 
-#descricao {
+.descricao {
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
 }
 
-#linguagens, #conhecimentosgerais{
+.sublistacompetencia{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
 }
