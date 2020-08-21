@@ -11,3 +11,7 @@ body {
   background-color: var(--backgroundBody);
   color: var(--textBody);
 }
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
