@@ -15,3 +15,31 @@ body {
 h1 {
   font-family: 'Courier New', Courier, monospace;
 }
+
+strong {
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#descricao {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+#linguagens, #conhecimentosgerais{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+}
+
+.listacompetencias {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+}
+
