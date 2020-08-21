@@ -1,0 +1,45 @@
+:root{ 
+  /* CSS HEX */
+--textBody: #22223bff;
+--independence: #4a4e69ff;
+--heliotrope-gray: #9a8c98ff;
+--silver-pink: #c9ada7ff;
+--backgroundBody: #f2e9e4ff;
+}
+
+body {
+  background-color: var(--backgroundBody);
+  color: var(--textBody);
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+strong {
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#descricao {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+#linguagens, #conhecimentosgerais{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+}
+
+.listacompetencias {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+}
+
