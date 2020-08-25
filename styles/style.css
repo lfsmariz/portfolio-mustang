@@ -1,19 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Russo+One&display=swap');
+
 :root{ 
   /* CSS HEX */
 --textBody: #22223bff;
 --independence: #4a4e69ff;
 --heliotrope-gray: #9a8c98ff;
 --silver-pink: #c9ada7ff;
---backgroundBody: #f2e9e4ff;
+--textcolor: #f2e9e4ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.corpo{
+  display: grid;
+  grid-template-areas: 
+  "perfil perfil perfil"
+  "sumario conteudo links"
+  "footer footer footer"
+  ;
+  grid-row-gap: 20px;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.profile {
+  grid-area: perfil;
+  display: grid;
+  margin: 0px 10px 20px 10px;
+  grid-template-areas: 
+  "nome nome"
+  "foto descricao"
+  "foto quemsou"
+  ;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: 100 125px 1fr;
 }
 
 body {
-  background-color: var(--backgroundBody);
-  color: var(--textBody);
+  background-color: var(--textBody);
+  color: var(--textcolor);
 }
 
 h1 {
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 2px 2px 1px var(--textBody);
+  background-color: var(--independence);
+  color: var(--textcolor);
+}
+
+h3 {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+}
+
+h4{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
 }
 
 strong {
@@ -22,24 +68,145 @@ strong {
 
 p {
   font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+
+.img_principal{
+  border-radius: 50%;
+  margin: 10px 10px 0px 10px;
+  grid-area: foto;
+  width: 100%;
+  transform: rotateY(180deg);
+  position: relative;
+  top: 2%;
 }
 
 .descricao {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
+  grid-area: descricao;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: var(--independence);
+  overflow: auto;
+  
 }
 
-.sublistacompetencia{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 22px;
+.nome {
+  grid-area: nome;
+  text-align: center;
+  padding: 30px 20px
 }
 
-.listacompetencias {
-  font-family: 'Courier New', Courier, monospace;
+.topic {
+  text-shadow: 2px 2px 2px var(--textBody);
+  margin-bottom: 10px;
 }
 
-h3 {
-  font-family: 'Courier New', Courier, monospace;
+.quemsoueu {
+  grid-area: quemsou;
+  margin: 0px 20px;
+  text-align: justify;
+  padding: 25px 30px;
+  line-height: 1.5;
+  background-color: var(--independence);
+  
+}
+
+.dev-font{
+  font-family: 'Russo One', sans-serif;
+}
+
+.titulo-lista{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 26px;
+  text-align: center;
 }
+
+.list{  
+  margin: 1px 10px 10px 20px;
+  padding: 20px;
+}
+
+.summary{
+  grid-area: sumario;
+  padding: 5%;
+  width: auto;
+}
+
+.conteudo{  
+  grid-area: conteudo;
+  padding: 20px;  
+}
+
+.text-background{
+  background-color: var(--independence);
+}
+
+.listacomp{
+  display: inline-block;
+}
+
+.linguagens{
+  position: relative;
+  align-self: center;
+  float: left;
+  left: 10%;
+  top: 5px;
+}
+
+.conhecimentosgerais{
+  position: relative;
+  float: right;
+  right: 10%;
+  top: 5px;  
+}
+
+.titulosublistacompetencia{
+  text-shadow:  2px 2px 1px var(--textBody);
+  margin-bottom: 10px;
+}
+
+.sublistacomp li{
+  margin-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+
+.sublistacomp li a{
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--silver-pink);
+  background-color: var(--textBody);
+}
+
+.sublistacomp li a:hover{
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--textBody);
+  background-color: var(--silver-pink);
+}
+
+.socialmedia li a, .summary li a{
+  display: block;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--silver-pink);
+  background-color: var(--textBody);
+  text-align: center;
+}
+
+.socialmedia li a:hover, .summary li a:hover{
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--textBody);
+  background-color: var(--silver-pink);
+  text-align: center;
+}
+
 
